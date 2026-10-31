@@ -1,0 +1,1520 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Radheesh M | Technical Leadership & Automation</title>
+
+<meta name="description" content="Radheesh M - Technology professional with 20 years of experience in automotive multimedia, programming, Python automation, technical leadership and operations.">
+
+<!-- Montserrat for name; Calibri for all other text -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --green: #47795b;
+    --green-dark: #28543c;
+    --green-light: #eaf1ec;
+    --black: #111111;
+    --white: #ffffff;
+    --grey: #66716a;
+    --light: #f5f7f5;
+    --border: #dfe6e0;
+    --red: #c20f13;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #26332b;
+    background: var(--white);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1160px, 90%);
+    margin: auto;
+}
+
+h1, h2, h3, p {
+    overflow-wrap: break-word;
+}
+
+/* HEADER */
+
+header {
+    background: var(--black);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,.15);
+}
+
+.header-inner {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.brand span {
+    color: #82b794;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color .2s;
+}
+
+nav a:hover {
+    color: #91c5a0;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    border: 0;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(120deg, #17251c, #253e2e);
+    color: white;
+    padding: 85px 0 75px;
+}
+
+.hero-inner {
+    display: grid;
+    grid-template-columns: 1.5fr .7fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.eyebrow {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.hero .eyebrow {
+    color: #a9d4b5;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(38px, 5vw, 57px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: #91c5a0;
+}
+
+.hero h2 {
+    font-size: clamp(20px, 2.5vw, 25px);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    color: #e0e9e2;
+    max-width: 690px;
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.btn-primary {
+    background: #78a989;
+    color: #102018;
+}
+
+.btn-primary:hover {
+    background: #a0c8aa;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--black);
+}
+
+.hero-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-photo img {
+    width: 310px;
+    height: 365px;
+    object-fit: contain;
+    object-position: center bottom;
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 43px;
+    max-width: 690px;
+}
+
+.stat {
+    border-left: 3px solid #80b28f;
+    padding-left: 13px;
+}
+
+.stat strong {
+    display: block;
+    font-size: 23px;
+    color: white;
+}
+
+.stat span {
+    color: #c9d8cd;
+    font-size: 14px;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 78px 0;
+}
+
+.section.tinted {
+    background: var(--light);
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    line-height: 1.25;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    color: var(--grey);
+    max-width: 780px;
+    font-size: 17px;
+}
+
+.section-heading .eyebrow {
+    margin-bottom: 8px;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.about-lead {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.55;
+    color: var(--green-dark);
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.highlight {
+    background: var(--green-light);
+    padding: 17px;
+    border-radius: 7px;
+    border-left: 3px solid var(--green);
+}
+
+.highlight strong {
+    display: block;
+    color: var(--green-dark);
+    font-size: 17px;
+}
+
+.highlight span {
+    font-size: 14px;
+    color: var(--grey);
+}
+
+/* CORE FOCUS */
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.focus-card {
+    background: white;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    border-top: 4px solid var(--green);
+}
+
+.focus-card h3 {
+    font-size: 20px;
+    color: var(--green-dark);
+    margin-bottom: 10px;
+}
+
+.focus-card p {
+    font-size: 16px;
+    color: var(--grey);
+}
+
+/* TECHNICAL SKILLS */
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: .2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,.07);
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    color: var(--green-dark);
+    margin-bottom: 14px;
+}
+
+.skill-card ul {
+    padding-left: 20px;
+}
+
+.skill-card li {
+    font-size: 16px;
+    margin-bottom: 7px;
+    color: #4e5b52;
+}
+
+.note {
+    color: var(--grey);
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+/* CAREER JOURNEY */
+
+.timeline {
+    border-left: 3px solid #9cbea6;
+    margin-left: 8px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 36px 35px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 17px;
+    height: 17px;
+    background: var(--green);
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #9cbea6;
+}
+
+.timeline-period {
+    color: var(--green);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.timeline-item h3 {
+    font-size: 22px;
+    color: var(--black);
+    margin: 5px 0;
+}
+
+.timeline-company {
+    color: var(--grey);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.timeline-item ul {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+.timeline-item li {
+    margin-bottom: 7px;
+}
+
+/* PROJECTS */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    border-left: 4px solid var(--green);
+}
+
+.project-card h3 {
+    font-size: 21px;
+    color: var(--black);
+    margin: 10px 0;
+}
+
+.project-card p {
+    color: var(--grey);
+    font-size: 16px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--green-light);
+    color: var(--green-dark);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.chips span {
+    background: #f0f2f0;
+    color: #46534a;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* LEADERSHIP */
+
+.leadership-panel {
+    background: #17251c;
+    color: white;
+    padding: 38px;
+    border-radius: 10px;
+}
+
+.leadership-panel h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.leadership-panel p {
+    color: #dce6df;
+    margin-bottom: 18px;
+}
+
+.leadership-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 30px;
+    padding-left: 20px;
+    color: #edf3ef;
+}
+
+.leadership-list li {
+    padding-left: 4px;
+}
+
+/* EDUCATION */
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.info-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.info-card h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+    color: var(--green-dark);
+}
+
+.info-card p {
+    color: var(--grey);
+}
+
+.info-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* LANGUAGES */
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.language-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 23px;
+    text-align: center;
+}
+
+.language-card h3 {
+    color: var(--green-dark);
+    font-size: 21px;
+}
+
+.language-card p {
+    color: var(--grey);
+    font-size: 15px;
+}
+
+/* CONTACT */
+
+.contact-section {
+    background: #17251c;
+    color: white;
+    padding: 78px 0;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.contact-intro {
+    color: #dce6df;
+    max-width: 760px;
+    margin-bottom: 35px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.contact-details {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-item {
+    border-bottom: 1px solid #46584b;
+    padding-bottom: 13px;
+}
+
+.contact-item strong {
+    display: block;
+    color: #a9d4b5;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-item a {
+    color: white;
+    overflow-wrap: anywhere;
+}
+
+.contact-item a:hover {
+    color: #a9d4b5;
+}
+
+.contact-form {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.contact-form [data-formspace] {
+    width: 100%;
+    min-height: 350px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #080b09;
+    color: #cbd4cd;
+    padding: 22px 0;
+    font-size: 14px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+    nav {
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero-inner {
+        gap: 25px;
+    }
+
+    .skill-grid,
+    .focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 700px) {
+    .header-inner {
+        min-height: 68px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background: #111;
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero-inner,
+    .about-grid,
+    .contact-grid,
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-photo {
+        order: -1;
+    }
+
+    .hero-photo img {
+        width: 230px;
+        height: 260px;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .section-heading h2,
+    .contact-section h2 {
+        font-size: 29px;
+    }
+
+    .skill-grid,
+    .focus-grid,
+    .project-grid,
+    .language-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .leadership-list {
+        grid-template-columns: 1fr;
+    }
+
+    .leadership-panel {
+        padding: 25px;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 400px) {
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+<div class="container header-inner">
+
+    <a href="#home" class="brand">RADHEESH M<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false">☰</button>
+
+    <nav id="nav">
+        <a href="#about">About Me</a>
+        <a href="#focus">Core Focus</a>
+        <a href="#skills">Skills</a>
+        <a href="#journey">Career</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#education">Education</a>
+        <a href="#languages">Languages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</div>
+</header>
+
+<main>
+
+<!-- HERO BANNER -->
+
+<section class="hero" id="home">
+<div class="container hero-inner">
+
+    <div>
+        <p class="eyebrow">TECHNOLOGY · AUTOMATION · LEADERSHIP</p>
+
+        <h1>Radheesh <span>M</span></h1>
+
+        <h2>Technical Leadership | Python Automation | Software Development</h2>
+
+        <p class="hero-description">
+            Technology and multimedia professional with 20 years of
+            industry experience across automotive multimedia,
+            programming, automation, application development,
+            technical team leadership and delivery operations.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat">
+                <strong>20 Years</strong>
+                <span>Industry Experience</span>
+            </div>
+            <div class="stat">
+                <strong>Up to 30</strong>
+                <span>Team Members Managed</span>
+            </div>
+            <div class="stat">
+                <strong>6 Departments</strong>
+                <span>Cross-functional Coordination</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-photo">
+        <!-- Place your portrait at assets/radheesh-portrait.png -->
+        <img src="./assets/radheesh-portrait.png"
+             alt="Radheesh M - Professional Portrait">
+    </div>
+
+</div>
+</section>
+
+<!-- ABOUT ME -->
+
+<section class="section" id="about">
+<div class="container">
+
+    <div class="section-heading">
+        <p class="eyebrow">01 / PROFESSIONAL PROFILE</p>
+        <h2>About Me</h2>
+    </div>
+
+    <div class="about-grid">
+
+        <div>
+            <p class="about-lead">
+                I am a technology professional with 20 years of experience
+                combining multimedia production, programming,
+                automation, application development and technical operations.
+            </p>
+
+            <div class="about-highlights">
+                <div class="highlight">
+                    <strong>20 Years</strong>
+                    <span>Professional experience</span>
+                </div>
+                <div class="highlight">
+                    <strong>Technical Leadership</strong>
+                    <span>Team and delivery management</span>
+                </div>
+                <div class="highlight">
+                    <strong>Automation</strong>
+                    <span>Production workflow improvements</span>
+                </div>
+                <div class="highlight">
+                    <strong>Development</strong>
+                    <span>Programming and applications</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <p>
+                I began my career as a Graphic Designer and Flash Animator,
+                creating automotive multimedia graphics and animations.
+                During this period, I identified opportunities to reduce
+                repetitive manual production work through automation.
+            </p>
+
+            <p>
+                I explored Photoshop scripting and developed JavaScript/JSX
+                automation to read layered PSD files and export individual
+                layers into JPG and PNG formats. This experience marked my
+                transition from multimedia production into programming
+                and technical problem-solving.
+            </p>
+
+            <p>
+                I subsequently progressed through programming, multimedia
+                and web development team leadership, and Assistant Manager
+                responsibilities. My experience includes coordinating
+                people, projects, production schedules, technical workflows
+                and quality requirements.
+            </p>
+
+            <p>
+                I enjoy identifying process inefficiencies, developing
+                practical solutions and combining technical knowledge
+                with operational understanding. My current interests include
+                Python development, automation, data analysis, Power BI
+                and software application development.
+            </p>
+
+            <p>
+                I am interested in opportunities where I can contribute
+                through technical development, automation, team leadership
+                and continuous improvement.
+            </p>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- CORE FOCUS -->
+
+<section class="section tinted" id="focus">
+<div class="container">
+
+    <div class="section-heading">
+        <p class="eyebrow">02 / PROFESSIONAL STRENGTHS</p>
+        <h2>Core Focus</h2>
+        <p class="section-intro">
+            My professional focus combines technical execution,
+            automation, delivery management and continuous improvement.
+        </p>
+    </div>
+
+    <div class="focus-grid">
+
+        <article class="focus-card">
+            <h3>Programming & Development</h3>
+            <p>
+                Developing practical software solutions, scripts and
+                applications using Python, JavaScript/JSX, PHP and
+                modern web technologies.
+            </p>
+        </article>
+
+        <article class="focus-card">
+            <h3>Process Automation</h3>
+            <p>
+                Identifying repetitive activities and building automation
+                workflows to reduce manual effort, improve consistency
+                and support production efficiency.
+            </p>
+        </article>
+
+        <article class="focus-card">
+            <h3>Technical Operations</h3>
+            <p>
+                Coordinating technical delivery, operational priorities,
+                resource requirements and production activities
+                across multiple teams.
+            </p>
+        </article>
+
+        <article class="focus-card">
+            <h3>Team Leadership</h3>
+            <p>
+                Leading technical and multimedia teams, assigning work,
+                coordinating responsibilities and supporting
+                performance and professional development.
+            </p>
+        </article>
+
+        <article class="focus-card">
+            <h3>Data & Reporting</h3>
+            <p>
+                Working with Excel, data processing and Power BI to
+                organise information, analyse performance and
+                communicate operational insights.
+            </p>
+        </article>
+
+        <article class="focus-card">
+            <h3>Quality & Continuous Improvement</h3>
+            <p>
+                Supporting quality assurance, process standardisation,
+                workflow optimisation and reliable delivery
+                through structured technical practices.
+            </p>
+        </article>
+
+    </div>
+</div>
+</section>
+
+<!-- TECHNICAL SKILLS -->
+
+<section class="section" id="skills">
+<div class="container">
+
+    <div class="section-heading">
+        <p class="eyebrow">03 / TECHNICAL TOOLKIT</p>
+        <h2>Technical Skills</h2>
+        <p class="section-intro">
+            Technologies, tools and professional capabilities used
+            across development, automation, multimedia and operations.
+        </p>
+    </div>
+
+    <div class="skill-grid">
+
+        <article class="skill-card">
+            <h3>Programming & Automation</h3>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript / JSX</li>
+                <li>PHP</li>
+                <li>Excel VBA</li>
+                <li>Script-based automation</li>
+            </ul>
+        </article>
+
+        <article class="skill-card">
+            <h3>Web Development</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>Responsive web development</li>
+            </ul>
+        </article>
+
+        <article class="skill-card">
+            <h3>Data & Reporting</h3>
+            <ul>
+                <li>Microsoft Power BI</li>
+                <li>Microsoft Excel</li>
+                <li>Data cleaning</li>
+                <li>Data transformation</li>
+                <li>Data visualisation</li>
+            </ul>
+        </article>
+
+        <article class="skill-card">
+            <h3>Database Management</h3>
+            <ul>
+                <li>MySQL</li>
+                <li>SQL</li>
+                <li>Database operations</li>
+                <li>Data handling</li>
+            </ul>
+        </article>
+
+        <article class="skill-card">
+            <h3>Multimedia & Image Processing</h3>
+            <ul>
+                <li>Adobe Photoshop</li>
+                <li>Image processing</li>
+                <li>Bulk image conversion</li>
+                <li>Image resizing</li>
+                <li>Metadata processing</li>
+                <li>Multimedia production</li>
+            </ul>
+        </article>
+
+        <article class="skill-card">
+            <h3>Development Tools</h3>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Python development environment</li>
+                <li>Version control</li>
+            </ul>
+        </article>
+
+    </div>
+
+    <p class="note">
+        Professional development: Microsoft Power BI Data Analyst,
+        Python/Django and Generative AI learning.
+    </p>
+
+</div>
+</section>
+
+<!-- CAREER JOURNEY -->
+
+<section class="section tinted" id="journey">
+<div class="container">
+
+    <div class="section-heading">
+        <p class="eyebrow">04 / PROFESSIONAL EXPERIENCE</p>
+        <h2>Career Journey</h2>
+        <p class="section-intro">
+            A career progression from multimedia production to
+            programming, technical team leadership and delivery management.
+        </p>
+    </div>
+
+    <div class="timeline">
+
+        <article class="timeline-item">
+            <span class="timeline-period">July 2023 – April 2026</span>
+            <h3>Assistant Manager – Multimedia Delivery & Programming Team</h3>
+            <p class="timeline-company">izmo Limited · Bengaluru, India</p>
+            <ul>
+                <li>Coordinated multimedia delivery and programming operations to meet production and quality requirements.</li>
+                <li>Managed team priorities, resource allocation and technical delivery schedules.</li>
+                <li>Coordinated approximately 50 projects/tasks across 6 departments.</li>
+                <li>Supported technical problem-solving and resolution of operational issues.</li>
+                <li>Contributed to workflow optimisation and automation initiatives.</li>
+                <li>Monitored delivery progress and supported quality and process improvements.</li>
+                <li>Coordinated cross-functional activities to support timely project execution.</li>
+            </ul>
+        </article>
+
+        <article class="timeline-item">
+            <span class="timeline-period">July 2015 – June 2023</span>
+            <h3>Team Lead – Multimedia & Web Development</h3>
+            <p class="timeline-company">izmo Limited · Bengaluru, India</p>
+            <ul>
+                <li>Led multimedia and web development activities and coordinated day-to-day team operations.</li>
+                <li>Assigned tasks and coordinated workloads based on project priorities.</li>
+                <li>Supported technical planning and delivery of multimedia and web development projects.</li>
+                <li>Coordinated with Design, Programming and QA teams to maintain delivery quality.</li>
+                <li>Monitored task progress and supported issue resolution.</li>
+                <li>Identified repetitive production activities and explored scripting-based automation.</li>
+                <li>Supported workflow improvements and team productivity initiatives.</li>
+            </ul>
+        </article>
+
+        <article class="timeline-item">
+            <span class="timeline-period">July 2011 – June 2015</span>
+            <h3>JSX Programmer</h3>
+            <p class="timeline-company">izmo Limited · Bengaluru, India</p>
+            <ul>
+                <li>Developed JavaScript/JSX scripts to automate Adobe Photoshop workflows.</li>
+                <li>Created automation to read layers from PSD files and export individual layers.</li>
+                <li>Automated JPG and PNG image export processes.</li>
+                <li>Explored scripting solutions to reduce repetitive manual production work.</li>
+                <li>Supported multimedia production through programming-based solutions.</li>
+            </ul>
+        </article>
+
+        <article class="timeline-item">
+            <span class="timeline-period">July 2006 – June 2011</span>
+            <h3>Graphic Designer / Flash Animator</h3>
+            <p class="timeline-company">izmo Limited · Bengaluru, India</p>
+            <ul>
+                <li>Created automotive multimedia graphics and visual assets.</li>
+                <li>Designed and prepared image resources using Adobe applications.</li>
+                <li>Developed Flash animations and multimedia content.</li>
+                <li>Processed layered PSD files and prepared production-ready images.</li>
+                <li>Worked on high-volume repetitive image production activities.</li>
+                <li>Identified opportunities to improve production efficiency through automation.</li>
+            </ul>
+        </article>
+
+    </div>
+
+    <p class="note">
+        Total professional experience: July 2006 – April 2026.
+    </p>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+
+<section class="section" id="projects">
+<div class="container">
+
+    <div class="section-heading">
+        <p class="eyebrow">05 / SELECTED WORK</p>
+        <h2>Projects & Case Studies</h2>
+        <p class="section-intro">
+            Practical projects demonstrating programming,
+            automation, image processing and application development.
+        </p>
+    </div>
+
+    <div class="project-grid">
+
+        <article class="project-card">
+            <span class="tag">JavaScript / Photoshop</span>
+            <h3>Layered PSD Export Automation</h3>
+            <p>
+                Developed a JavaScript/JSX program to read through
+                Photoshop PSD layers and export individual layers
+                into JPG or PNG files, reducing repetitive manual work.
+            </p>
+            <div class="chips">
+                <span>JavaScript / JSX</span>
+                <span>Photoshop</span>
+                <span>Automation</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <span class="tag">Python Automation</span>
+            <h3>Bulk File & Image Processing</h3>
+            <p>
+                Python-based workflows for bulk file and image
+                processing, including image conversion, resizing
+                and metadata handling.
+            </p>
+            <div class="chips">
+                <span>Python</span>
+                <span>Image Processing</span>
+                <span>Metadata</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <span class="tag">Data Automation</span>
+            <h3>Excel Automation</h3>
+            <p>
+                Automation tools for spreadsheet processing,
+                data handling, repetitive Excel operations
+                and business data workflows.
+            </p>
+            <div class="chips">
+                <span>Python</span>
+                <span>Excel</span>
+                <span>Data Processing</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <span class="tag">Desktop Application</span>
+            <h3>Freelance Job Finder</h3>
+            <p>
+                Python desktop application project designed
+                to search and organise freelance job opportunities
+                from multiple sources.
+            </p>
+            <div class="chips">
+                <span>Python</span>
+                <span>Desktop GUI</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <span class="tag">Web Application</span>
+            <h3>Service Request Management System</h3>
+            <p>
+                Web application project covering service-request
+                capture, workflow management, role-based access
+                and multi-level approval processes.
+            </p>
+            <div class="chips">
+                <span>PHP / Web</span>
+                <span>MySQL</span>
+                <span>Workflow</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <span class="tag">AI Application</span>
+            <h3>BrandForge-AI</h3>
+            <p>
+                AI-focused application project involving selected
+                modules and application development. The full
+                originally planned module set was not completed.
+            </p>
+            <div class="chips">
+                <span>AI Application</span>
+                <span>Development</span>
+            </div>
+        </article>
+
+    </div>
+</div>
+</section>
+
+<!-- LEADERSHIP -->
+
+<section class="section tinted" id="leadership">
+<div class="container">
+
+    <div class="section-heading">
+        <p class="eyebrow">06 / MANAGEMENT & DELIVERY</p>
+        <h2>Technical Leadership & Operations</h2>
+    </div>
+
+    <div class="leadership-panel">
+
+        <h3>Leading People, Processes & Technical Delivery</h3>
+
+        <p>
+            Experienced in coordinating technical teams and
+            multimedia production operations, aligning people,
+            resources and delivery priorities with business
+            and quality requirements.
+        </p>
+
+        <ul class="leadership-list">
+            <li>Technical team leadership and coordination</li>
+            <li>Resource allocation and workload planning</li>
+            <li>Project and delivery coordination</li>
+            <li>Cross-functional department coordination</li>
+            <li>Task monitoring and delivery tracking</li>
+            <li>Quality assurance coordination</li>
+            <li>Workflow optimisation and process improvement</li>
+            <li>Technical issue identification and resolution</li>
+            <li>Production planning and prioritisation</li>
+            <li>Automation and operational efficiency initiatives</li>
+        </ul>
+
+    </div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+
+<section class="section" id="education">
+<div class="container">
+
+    <div class="section-heading">
+        <p class="eyebrow">07 / QUALIFICATION</p>
+        <h2>Education & Professional Development</h2>
+    </div>
+
+    <div class="education-grid">
+
+        <article class="info-card">
+            <h3>B.Tech – Electronics & Communication Engineering</h3>
+            <p>University of Calicut · 2005</p>
+        </article>
+
+        <article class="info-card">
+            <h3>Professional Development</h3>
+            <ul>
+                <li>Microsoft Power BI Data Analyst – Pursuing</li>
+                <li>Python and Django Development – Professional development</li>
+                <li>Generative AI – Professional development</li>
+            </ul>
+        </article>
+
+    </div>
+</div>
+</section>
+
+<!-- LANGUAGES -->
+
+<section class="section tinted" id="languages">
+<div class="container">
+
+    <div class="section-heading">
+        <p class="eyebrow">08 / COMMUNICATION</p>
+        <h2>Languages</h2>
+    </div>
+
+    <div class="language-grid">
+
+        <article class="language-card">
+            <h3>Malayalam</h3>
+            <p>Native</p>
+        </article>
+
+        <article class="language-card">
+            <h3>English</h3>
+            <p>Upper-Intermediate</p>
+        </article>
+
+        <article class="language-card">
+            <h3>Hindi</h3>
+            <p>Intermediate</p>
+        </article>
+
+    </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact-section" id="contact">
+<div class="container">
+
+    <p class="eyebrow" style="color:#a9d4b5;">09 / GET IN TOUCH</p>
+
+    <h2>Let's Connect</h2>
+
+    <p class="contact-intro">
+        I welcome discussions about technical opportunities,
+        Python development, automation projects, software solutions,
+        technical leadership and professional collaboration.
+        Feel free to get in touch.
+    </p>
+
+    <div class="contact-grid">
+
+        <div class="contact-details">
+
+            <div class="contact-item">
+                <strong>Email</strong>
+                <a href="mailto:radheesh.m@gmail.com">
+                    radheesh.m@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>Phone</strong>
+                <a href="tel:+919916641184">
+                    +91 99166 4184
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>LinkedIn</strong>
+                <a href="https://www.linkedin.com/in/radheesh-m-79045a43"
+                   target="_blank" rel="noopener">
+                    View LinkedIn Profile ↗
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>GitHub</strong>
+                <a href="https://github.com/radheeshm"
+                   target="_blank" rel="noopener">
+                    github.com/radheeshm ↗
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>Portfolio</strong>
+                <a href="https://radheeshm.github.io/portfolio"
+                   target="_blank" rel="noopener">
+                    radheeshm.github.io/portfolio ↗
+                </a>
+            </div>
+
+        </div>
+
+        <!-- FORM SPACE EMBED -->
+
+        <div class="contact-form">
+
+            <div data-formspace="https://zesty-heron-478.forms.space/contact-me-gsm1xb"></div>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="container footer-inner">
+
+    <span>© <span id="year"></span> Radheesh M. All rights reserved.</span>
+
+    <span>Technical Leadership | Automation | Development</span>
+
+    <a href="#home">Back to Top ↑</a>
+
+</div>
+</footer>
+
+<!-- FORM SPACE EMBED SCRIPT -->
+
+<script src="https://formspace.com/embed.js" defer crossorigin></script>
+
+<!-- NAVIGATION AND YEAR -->
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const nav = document.getElementById("nav");
+
+menuToggle.addEventListener("click", function () {
+    const isOpen = nav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+nav.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        nav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+    });
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
