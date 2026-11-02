@@ -464,6 +464,16 @@ nav a:hover {
     margin: 10px 0;
 }
 
+.project-card ul {
+    padding-left: 20px;
+    margin-top: 12px;
+    color: var(--grey);
+    font-size: 15px;
+}
+
+.project-card li {
+    margin-bottom: 7px;
+}
 .project-card p {
     color: var(--grey);
     font-size: 16px;
@@ -1298,11 +1308,90 @@ footer a:hover {
             </div>
         </article>
 
-    </div>
-</div>
-</section>
 
-<!-- LEADERSHIP -->
+        <article class="project-card">
+            <span class="tag">Python · Image Metadata</span>
+            <h3>Vehicle Image Metadata and TrimPix Preparation</h3>
+            <ul>
+                <li>Read vehicle CSV data to derive image names, folder paths, and metadata values.</li>
+                <li>Checked for expected images across vehicle colors and exterior angles.</li>
+                <li>Prepared ExifTool commands for titles, descriptions, keywords, and copyright metadata.</li>
+                <li><strong>Code review:</strong> the source image is not passed to ExifTool in the main script; verify the output flow before describing this as complete packaging.</li>
+            </ul>
+            <div class="chips">
+                <span>Python</span><span>CSV</span><span>ExifTool</span><span>Image Metadata</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <span class="tag">Python · Image Processing</span>
+            <h3>Image Conversion and Resizing Utilities</h3>
+            <ul>
+                <li>Built batch utilities to convert PSD, DNG, JPG, and PNG images to formats including JPEG, PNG, and WebP.</li>
+                <li>Added standard and custom resizing workflows, including folder processing.</li>
+                <li>Generated size-specific outputs and animated WebP files from image sequences.</li>
+                <li>Reduced repetitive preparation steps, with manual checks retained for image quality and transparency.</li>
+            </ul>
+            <div class="chips">
+                <span>Python</span><span>Pillow</span><span>ImageMagick</span><span>WebP</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <span class="tag">Python · Quality Checks</span>
+            <h3>URL and Image Link Health Checks</h3>
+            <ul>
+                <li>Checked image URLs from Excel and CSV inputs and exported failed links for review.</li>
+                <li>Added URL splitting and duplicate removal for lists embedded in CSV fields.</li>
+                <li>Used concurrent requests in one script variant to process URL collections.</li>
+                <li>Classified links mainly by HTTP response; visual image correctness still requires review.</li>
+            </ul>
+            <div class="chips">
+                <span>Python</span><span>HTTP</span><span>CSV / Excel</span><span>Concurrency</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <span class="tag">Excel VBA · Automotive Data</span>
+            <h3>Vehicle Color Data Preparation and Localization</h3>
+            <ul>
+                <li>Generated country-specific worksheets for vehicle color data and market templates.</li>
+                <li>Extracted trim and exterior color combinations from workbook matrices using “X” markers.</li>
+                <li>Consolidated vehicle details such as year, make, model, trim, and alias into structured sheets.</li>
+                <li>Included separate language columns for Belgium and Switzerland templates.</li>
+            </ul>
+            <div class="chips">
+                <span>Excel VBA</span><span>Data Extraction</span><span>Localization</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <span class="tag">Excel VBA · Data Cleanup</span>
+            <h3>Excel Data Standardization Toolkit</h3>
+            <ul>
+                <li>Added selection-based case conversion and vehicle make formatting, skipping formula cells.</li>
+                <li>Applied terminology replacements for French, Dutch, Spanish, and Italian color descriptions.</li>
+                <li>Created special-character cleanup and cell-to-value utilities for spreadsheet workflows.</li>
+            </ul>
+            <div class="chips">
+                <span>Excel VBA</span><span>Text Cleanup</span><span>Multilingual Data</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <span class="tag">Excel VBA · File Operations</span>
+            <h3>Vehicle Asset Folder Readiness Checks</h3>
+            <ul>
+                <li>Checked configured delivery folders for expected color swatches, PNG sizes, 360 imagery, and panoramic assets.</li>
+                <li>Added utilities to count subfolders and list server-side alias folders from network paths.</li>
+                <li>Returned missing asset categories or folder details to Excel for follow-up.</li>
+                <li>Uses network-specific paths that need configuration for other environments.</li>
+            </ul>
+            <div class="chips">
+                <span>Excel VBA</span><span>FileSystemObject</span><span>Asset QA</span>
+            </div>
+        </article>
+
 
 <section class="section tinted" id="leadership">
 <div class="container">
@@ -1518,3 +1607,4 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 </body>
 </html>
+
